@@ -24,3 +24,30 @@
 .abstract a:hover{
     color:skyblue;
 }
+
+.button{
+    list-style:none;
+}
+
+.button a{
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    height: 64px;
+    padding: 8px 24px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: gray;
+    border-radius: 32px;
+  }
+
+    .button a:hover {
+      background-color: darkgray;
+    }
+  }
