@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.background{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+
+.object{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+
+.plan{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+
+.list{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px; 
+}
