@@ -25,10 +25,6 @@
     color:skyblue;
 }
 
-.button_position{
-
-}
-
 .button{
     list-style:none;
 }
@@ -52,9 +48,8 @@
     overflow-wrap: anywhere;
     background-color: gray;
     border-radius: 32px;
-  }
+}
 
-    .button a:hover {
-      background-color: darkgray;
-    }
-  }
+.button a:hover {
+  background-color: darkgray;
+}
