@@ -1,26 +1,26 @@
 @charset "utf-8";
 
-.to_ex1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+a{
+    display: inline;
 }
 
+h2{
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+.to_ex1{
+    text-align: center;
+    width:100%;
+}
 
 .to_ex2{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 1000px;
+    text-align: center;
+    width:100%;
 }
 
 .to_ex3{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 1000px;
+    text-align: center;
+    width:100%;
 }
