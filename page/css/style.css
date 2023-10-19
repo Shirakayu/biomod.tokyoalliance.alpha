@@ -5,6 +5,7 @@ h1{
 p{
     font-size: 20px;
 }
+
 /*全体*/
 body{
     background-color: lightgray;
@@ -61,7 +62,8 @@ body{
 /*上ロゴ関連*/
 .teamlogo{
     position:fixed;
-    top:0;
+    top:5px;
+    margin-left: 20px;
 }
 .teamlogo a{   
     text-decoration:none;
