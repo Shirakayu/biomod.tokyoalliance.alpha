@@ -35,3 +35,12 @@
     padding-right: 40px;
     max-width: 1000px; 
 }
+
+.flowchart{
+    max-width: 100%;
+}
+
+.plan li{
+    margin-bottom:30px ;
+    font-size: 20px;
+}
