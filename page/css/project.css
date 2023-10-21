@@ -49,8 +49,10 @@
     margin-left: 60px;
 }
 .list_component h3{
-    margin-top: 0;
+    margin-left: 40px;
+    margin-top: 10px;
     margin-bottom: 0;
+    color: gray;
 }
 .list_component p{
     margin-top: 0;
