@@ -44,3 +44,15 @@
     margin-bottom:30px ;
     font-size: 20px;
 }
+
+.list_component{
+    margin-left: 60px;
+}
+.list_component h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.list_component p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
