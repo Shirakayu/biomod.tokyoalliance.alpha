@@ -28,10 +28,35 @@
 }
 
 .designing{
+    word-break: break-all;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    padding-left: 80px;
+    padding-left: 60px;
     padding-right: 40px;
     max-width: 1000px;
+}
+
+.sequence{
+    margin-top: 20;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    max-width: 1000px;
+}
+.sequence h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.sequence p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 10000px;
 }

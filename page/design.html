@@ -89,16 +89,55 @@
         </div>
 
         <div class="designing">
+            <h2>〇 RCA Origami in Previous</h2>
+            <p>
+                　まず、先行研究でオリガミ化を達成した鋳型、プライマー、stapleの配列を示す。
+            </p>
+            <div class="sequence">
+                <h3>RCA template(96nt)</h3>
+                <p>TAAGATGAAGATAGCGCACAATGGTCGGATTCTCAACTCGTATTCTCAACTCGTATTCTCAACTCGTCTCTGCCCTGACTTCTATGCCCAGCCCTG </p>
+                <h3>primer(20nt)</h3>
+                <p>CGAGTTGAGAATCCGACCAT </p>
+                <h3>staple 1(16nt)</h3>
+                <p>CCCTGACTCACAATGG</p>
+                <h3>staple 2(16nt)</h3>
+                <p>TCGGATTCCGTCTCTG </p>
+                <h3>staple 3(32nt)</h3>
+                <p>TAAGATGAAGATAGCGTCTATGCCCAGCCCTG</p>
+                <h3>staple 4(32nt)</h3>
+                <p>ACTCGTATTCTCAACTTCAACTCGTATTCTCA </p>
+            </div>
+            <p>
+                　このstaplesを、templateとprimerによって作成されたRCA産物に混和させると以下のような構造を取ると論文では報告している。
+                この構造を基礎に、以下ではデザインを行っていく
+            </p>
+            <img src="../image/previous_origami.jpg">
+
             <h2>〇 Designing Toehold with 1st RCA Staple</h2>
             <p>
-                　まず、先行研究からオリガミ化が確認されたRCA templateおよびstapleの配列を引用し、
+                　先行研究からオリガミ化が確認されたRCA templateおよびstapleの配列を引用し、
                 そのstaple DNAにトーホールド配列を追加することで、私たちのひとつめのデバイスを設計した。
+                <br>
+                　私たちは、NUPACKを用いて設計した。NUPACKとは、核酸構造の解析、設計のためのソフトウェアである。
+                そのため、オリガミ状構造には対応しておらず、上記の構造をそのまま入力することはできなかったため、
+                各ステープルに着目して要素を細分化することで、RCA産物長鎖DNAとステープルの二次構造形成を阻害しないトーホールド配列を計算した。
+                具体的には、下の図のような細分化を他のstapleに対しても行い計算をした。
+                すなわち、４つの構造がワンポットに存在する状況を仮定し、その安定性の最適化を行った。
+                <br>
+                　この簡略化は後のシミュレーションでも用いる。
             </p>
-            <p >
-                　私たちは、NUPACKを用いて設計した。NUPACKとは、核酸構造の解析、設計のためのソフトウェアだ。
-                これを用いることで、RCA産物長鎖DNAとステープルの二次構造形成を阻害しないトーホールド配列を計算した。
-
-            </p>
+            <img src="../image/origami_model.jpg">
+            <p>　以下がその結果によって得られた私たちのトーホールド付きステープル鎖である。</p>
+            <div class="sequence">
+                <h3>staple 1(22nt)</h3>
+                <p>CCCTGACTCACAATGGACCGC </p>
+                <h3>staple 2(22nt)</h3>
+                <p>TCGGATTCCGTCTCTGATCTAT </p>
+                <h3>staple 3(38nt)</h3>
+                <p>TAAGATGAAGATAGCGTCAACTCGTATTCTCATTAGCT</p>
+                <h3>staple 4(38nt)</h3>
+                <p>ACTCGTATTCTCAACTTCTATGCCCAGCCCTGTTATTA</p>
+            </div>
 
             <h2>〇 Designing 2nd RCA Template and Staple</h2>
             <p>
@@ -106,18 +145,49 @@
                 ひとつめのRCA産物と同様の方式でオリガミ化が可能な２つ目のRCA templateを考察した。
                 <br>
                 　まず、ひとつめのRCA産物と相補である認識配列を探索した。元論文では2種類の92ntのRCA産物どうしでのゲル化に実績があり、
-                この場合において相補的な配列は両者に○○ntずつ含まれていた。このとき、GC含有率は〇〇%であった。そこで、このような条件に類似する部分配列として、
-                〇〇〇に決定した。この配列は、オリガミ化時に３つのステープルにまたがっており、配列長〇〇nt、GC含有率は〇〇%である。 
+                この場合において相補的な配列は両者に37ntずつ含まれていた。このとき、GC含有率は50%、Tmは68℃であった。そこで、このような条件に類似する部分配列を既存のRCA templateから探し、以下に決定した。
+            </p>
+
+            <div class="sequence">
+                <p>
+                    ACTCGTATTCTCAACTCGTCTCTGCCCTGACT 
+                </p>
+            </div>
+            <p>
+                この配列は、オリガミ化時に３つのステープルにまたがっており、配列長32nt、GC含有率は50%、Tmは66℃である。 
                 <br>
                 　そのうえで、一つ目のデバイスにてトーホールドの配列を計算したのと同様に、二つ目のRCA templateの未決定部分とトーホールド付きステープル配列をNUPACKでデザインした。
-                このとき、一つ目のRCA産物オリガミが優性な環境でも問題なく構造を取ることができるよう、チューブ内の存在濃度に差をつけて計算を行っている。 
+                このとき、ひとつのチューブのなかに先行研究を基礎に設計したRCA産物デバイスも存在している状況を設定し、
+                かつ、今回に新規でデザインするRCA産物デバイスの濃度が一つ目に対して過剰にある状況を想定した。ひとつめに一つ目の配列の構造形成を阻害しない配列をデザインするため、
+                もうひとつにRCA反応は同じ配列を繰り返し増幅する反応であるため高濃度で存在したときに自己凝集を容易に起こさないようにするためである。 
+                <br>
+                　以下が、ここで得られたRCA templateとprimerの配列である。 
             </p>
+            <div class="sequence">
+                <h3>RCA template 2(96nt)</h3>
+                <p>AGTCAGGGCAGAGACGAGTTGAGAATACGAGTGCTCCCACCGCACGTCTCTGCTCGGTGGATAACGTGGTACCGCCGTTCTAGTACGGTGCACAAC</p>
+                <h3>primer 2(20nt)</h3>
+                <p>TGGGAGCACTCGTATTCTCA</p>
+            </div>
 
             <h2>〇 Redesigning Toehold with 2nd RCA Staple</h2>
             <p>
-                　二つ目のRCA産物について、ステープルに付属させるトーホールド配列を再度デザインした。
-                先のデザインで既にトーホールド配列まで計算を行ったが、RCA産物オリガミ１とRCA産物オリガミ２の濃度を同じ値にしたうえで再度計算を行った。 
+                　二つ目のRCA産物について、ステープルに付属させるトーホールド配列を再度デザインした。先のデザインで既にトーホールド配列まで計算を行ったが、
+                RCA産物オリガミ１とRCA産物オリガミ２の濃度を同じ値にしたうえで再度計算を行った。これはトーホールド配列は鎖置換とそれに伴うゲル化の促進を目的としているため、
+                反応条件は２種のデバイスが同濃度で存在していると仮定するのが適切だと考えなおしたためである。 
+                <br>
+                　以下が、設計されたトーホールド付きステープルの配列である。 
             </p>
+            <div class="sequence">
+                <h3>staple 2-1(22nt)</h3>
+                <p>GTGGATAAAGTCAGGGTGTTTG</p>
+                <h3>staple 2-2(22nt)</h3>
+                <p>CAGAGACGTCTGCTCGGCACAT</p>
+                <h3>staple 2-3(38nt)</h3>
+                <p>GCTCCCACCGCACGTCAGTTGAGAATACGAGTTAGTCG</p>
+                <h3>staple 2-4(38nt)</h3>
+                <p>TAGTACGGTGCACAACCGTGGTACCGCCGTTCCCTGCG</p>
+            </div>
 
             <! NUPACKの画面なりexportファイルなりを添付する！>
 
