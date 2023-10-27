@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
         <nav>
             <ul class="page_tag">
                 <li><a href="team.html">TEAM</a> </li>
-                <li><a href="future.html">FUTURE</a></li>
+                <li><a href="conclution.html">CONCLUSION</a></li>
                 <li class="experiment"><a href="experiment.html">EXPERIMENT</a> 
                     <ul>
                         <li><a href="ex1.html">EXPERIMENT1</a></li>
@@ -43,170 +43,144 @@
 
         <h1>PROJECT</h1>
 
+        <div class="interesting">
+        <h2>〇 Our Interesting</h2>
+            <p>
+                &emsp;
+                Our interest is a reaction such as LLPS and gelation by DNA. LLPS is one of the most interest topics among biologists since it was discovered in living cells,
+                where it is possible to selectively aggregate various biological macromolecules, for example proteins, substrate, and nucleic acids, to promote specific chemical reactions(1).
+                We, too, are interested in this currently hot topic, and set the goal of our project to design a device that can promote any reaction by controlling phase separation through DNA turning into hydrogel depending on specific input.
+                <br>
+                &emsp;
+                Our project is to design a device that provides the benefits of DNA hydrogels in a inputｰspecific and localized by controlling gelation with reference to the existing DNA tools.
+                Specifically, the design of a device that can form a gel by self-aggregating and increasing its concentration when it receives input DNA or RNA and can promote specific reactions based on its sequence.
+            </p>
+        </div>
         <div class="background">
         <h2>〇 Background</h2>
             <p>
-                　DNAはその相補性に基づいて凝集することで、
-                ハイドロゲルを形成できることが知られる。
-                例えば、粘着末端を持つ二本鎖のリンカーを利用し
-                Y-モチーフDNAを接続させることでゲル化させる方法などが知られる。
-                こうして形成されるゲルにはDNAを材料とするメリットがいくつかある。
-                ひとつめは、ゲルを構成するDNAに特定の遺伝子を組み込むことが出来る点である。
-                こうすることでタンパク質をハイドロゲル内で無細胞合成することが可能である。
-                また、ゲルを形成するDNAにアプタマー配列を組み込むことで特定の物質や細胞などを特異的にゲル内に取り込むことができる。
-                これを応用すれば、特定の細胞のみを取り分けたり、薬剤をDNAゲル構造で保護しながらデリバリーすることが期待される。
+                &emsp;
+                It is known that DNA can aggregate based on its complementarity to form hydrogels. For example, a method is known in which a linker DNA with sticky ends is used to connect Y-motif DNA to form a gel(2)(3). 
+                Gelation in this way have several advantages of using DNA as a material. First, specific genes can be incorporated into the DNA that makes up the gel. 
+                This allows cell-free synthesis of proteins in the hydrogel. Also, by incorporating aptamer sequences on it, specific substances or cells can be trapped into the gel. 
+                Applying this technology is expected that only specific cells can be isolated, and drugs can be delivered while protected by the DNA gel.
                 <br>
-                　同時に、DNAを材料としたインテリジェンスなツールは数多く開発されている。
-                アンドゲートやノットゲートといった論理回路はもちろん、
-                それらをトランスデューサーとして組み込んだ分子ロボットや、
-                複数組み合わせて構築されたコンピューティングネットワークなども知られる。
-                これは、DNAの相補的な結合やそれに伴う二次構造・三次構造の形成、
-                あるいはNucleaseや制限酵素などのツールの豊富さによって成り立っている。
+                &emsp;
+                On the other hand, many intelligent tools have been developed using DNA as a material(4). Logic circuits such as and gate and Not gate, as well as molecular robots incorporating them as transducers, and computing networks constructed by combining several of them are known.
+                This is made possible by the complementary joining of DNA and the associated formation of secondary and tertiary structures, or by the abundance of tools such as Nuclease and restriction enzymes.
             </p>
         </div>
 
-        <div class="object">
-            <h2>〇 Our Object</h2>
+        <div class="problem">
+        <h2>〇 Problem</h2>
             <p>
-                　私たちのプロジェクトは、DNAツールのインテリジェンシーを利用してゲル化を制御することで、
-                特異的・局所的にDNAハイドロゲルのメリットを提供するデバイスの設計である。
-                具体的には、インプットとなるDNAを受け取ったときに自己凝集をして濃度を上げることでゲルを形成するような群体デバイスだ。
+                &emsp;
+                As mentioned earlier, input-dependent DNA gelation has been reported using methods such as using linker DNA, however, the function of the gels so formed is greatly limited. These methods are limited to DNA structures with three or more sticky ends,
+                for instance Y-motifs, and the density of the gel structure may be reduced because the structure itself becomes larger when significant sequences are incorporated. 
+                Previous studies have introduced mechanisms to recognize and trap molecules in DNA gels, but they are limited to methods that utilize the properties of chemical substance that modified DNA with, for example, trapping streptavidin using biotin-modified DNA, 
+                and are not able to provide functions depending on the DNA sequence that constitutes the gel yet (e.g., aptamers, coding gene).
                 <br>
-                　そこで私たちは、2次元構造の形成とゲル形成どちらにも実績がある、RCA産物の長鎖DNAに目をつけた。
-                これらの実績を再現し、さらに鎖置換の要素を加えることで２つの実績を関連づけることで、私たち独自のデバイスをデザインしました。
-                このデバイスの挙動を評価することが私たちのプロジェクトの目的です。
+                &emsp;
+                In other words, the design of DNA devices whose gelation is controlled by the input and whose function is determined by the sequence is the issue we are working on.    
             </p>
+
+
+        </div>
+
+        <div class="solution">
+            <h2>〇 Our Solution</h2>
+            <p>
+                &emsp;
+                In designing our device, we turned to the rolling circle amplification (RCA)and its product, long-stranded DNA, which has a proven track record in both folding nanostructure and gelation. 
+                Unlike PCR, which also uses polymerase, this reaction does not produce logarithmic amplification, but it does produce long-stranded DNA with repeated sequences that are complementary to the template circular DNA. 
+                In a previous study on this RCA, it was reported that gelation was achieved by mixing two types of RCA product long-stranded DNA that have partially complementary sequences to each other, 
+                and selective cell trapping was achieved by incorporating aptamer sequences simultaneously(5). In another paper, four types of staple DNA were successfully added to RCA products in appropriate conditions to form DNA Origami-like nanowire structures(6).
+                <br>
+                &emsp;
+                By adding the domain for DNA strand displacement, we propose a device in which the staple DNA displace depended on input DNA and long-stranded DNA is released, i.e., changes from a DNA Origami-like structure to a DNA gel structure. 
+                We believe that this will achieve a device in which gelation is controlled by the presence or absence of an input molecule, DNA, and which is also expected to be applied to the effective use of aptamer sequences in gels, as seen in previous studies.
+                <br>
+                &emsp;
+                We named this device <strong>“DNA Mochi Robot”</strong>.
+            </p>
+            <img src="../image/reaction.jpg" 
+            width="100%"
+            alt="reaction"/>
         </div>
 
         <div class="plan">
             <h2>〇 Project Plan</h2>
+            <p>
+                &emsp;
+                Our project will be accomplished in four phases.
+            </p>
             <img src="../image/flowchart.jpg" class="flowchart">
             <! 画像は仮。このあと色を変えたりする予定>
 
             <ul>
                 <li>
-                    Simulation①：
+                    Design:
                     <br>
-                    　RCA産物を用いたオリガミ状構造形成の論文を参考に、トーホールド配列を伸長したステープル鎖を仮定して鎖置換の効率についてVisualDSDを用いてシミュレート。 
+                    &emsp;
+                    Design an RCA template that can be used for both folding to Origami-like structure and Gelation with reference to previous studies.
                 </li>
                 <li>
-                    Design①：
+                    RCA:
                     <br>
-                    　RCA産物を用いたオリガミ状構造形成の論文を参考に、構造的に邪魔をせず、かつ直交するようなトーホールド配列を伸長させたステープルDNAの設計。
+                    &emsp;
+                    Perform RCA using the designed template and confirm that long-stranded DNA is produced.
                 </li>
                 <li>
-                    Origami①：
+                    3.	Origami and Gel:
                     <br>
-                    　RCA産物を用いたオリガミ状構造形成の論文のトレース、およびトーホールド配列を伸長させたステープル鎖でも同様にオリガミ状構造を形成できるかテスト（AFM&電気泳動）。 
+                    &emsp;
+                    Using the RCA product long-stranded DNA, confirm that folding to Origami-like structure and Gelation.
                 </li>
                 <li>
-                    Chain replacement①：
+                    Finalize:
                     <br>
-                    　自分たちのステープル（トーホールド配列のあるステープル）を用いて作製したオリガミ構造が、鎖置換により長鎖DNAとして遊離されるかテスト。 
-                </li>
-                <li>
-                    Design②：
-                    <br>
-                    　先行論文に準拠して設計した私たちのひとつめのデバイスと相補配列を用いてゲル化の促進が可能であり、オリガミ状構造を同様の方式で取ることができるRCA産物を考察し、そのテンプレート、ステープル、トーホールド配列などを設計。 
-                </li>
-                <li>
-                    Simulation②：
-                    <br>
-                    　鎖置換を開始させる入力DNAの有無について、２種のデバイス間での相互作用を計算。 
-                </li>
-                <li>
-                    Gel：
-                    <br>
-                    　ひとつめのRCA産物とふたつめのRCA産物それぞれを混和したときにゲルが形成されるか、そのゲルの強度はどの程度か測定。
-                </li>
-                <li>
-                    Origami②：
-                    <br>
-                    　新しく設計した自分たちの配列についても、ひとつめのサンプルと同様にオリガミ状構造化ができるかテスト。 
-                </li>
-                <li>
-                    Origami②：
-                    <br>
-                    　新しく設計した自分たちの配列についても、ひとつめのサンプルと同様にオリガミ状構造化ができるかテスト。
-                </li>
-
-                <li>
-                    Assay：
-                    <br>
-                    　以上の結果を踏まえて、ふたつのRCAデバイスが入力DNA依存的にゲル構造を形成することを確かめる。 
+                    &emsp;
+                    Confirm the change from the Origami-like structure to the Gel structure by following the workflow. (Completion of device!)
                 </li>
             </ul>
 
         </div>
 
-        <div class="list">
-            <h2>〇 Check list</h2>
-            <div class="list_component">
-                <h3>Simulation①</h3>
-                <p>
-                    ☒ RCAオリガミを要素化し、鎖置換反応を検証 
-                </p>
-                <h3>Design①</h3>
-                <p>
-                    ☒ 二次元構造を阻害しないようなトーホールド配列の追加 
-                </p>
-                <h3>Origami①</h3>
-                <p>
-                    □ ステープルの有無での構造変化を確認（電気泳動） 
-                    <br>
-                    □ 変化した構造がオリガミ状構造である確認（AFM） 
-                </p>
-                <h3>Chain replacement①</h3>
-                <p>
-                    □ 構造化したRCA産物にinput DNAを加えたときの構造変化を確認（電気泳動）
-                </p>
-                <h3>Design②</h3>
-                <p>☒一つ目の配列を認識し、ゲル化を促進する相補配列の探索 
-                    <br>
-                    ☒オリガミ化（二次元構造）を阻害しないような鋳型全長配列設計 
-                    <br>
-                    ☒作製した２つめの鋳型に対するステープルとトーホールド配列の設計 
-                </p>
-                <h3>Simulation②</h3>
-                <p>
-                    □ 設計した２つのデバイスの入力の組み合わせおよび濃度に対する応答の計算
-                </p>
-                <h3>Gel</h3>
-                <p>
-                    □ ２種のRCA産物を混合したときのゲル化の確認
-                </p>
-                <h3>Origami②</h3>
-                <p>
-                    □ 2つ目のRCA産物の、ステープルの有無での構造変化を確認（電気泳動） 
-                    <br>
-                    □ 2つ目のRCA産物の、変化した構造がオリガミ状構造である確認（AFM）
-                </p>
-                <h3>Chain replacement①</h3>
-                <p>
-                    □ 構造化したRCA産物にinput DNAを加えたときの構造変化を確認（電気泳動） 
-                </p>
-                <h3>Assay</h3>
-                <p>
-                    □ マイクロ流体デバイスを用いた塞栓アッセイ 
-                    <br>
-                    □アプタマー配列を用いた細胞・物質選別アッセイ 
-                </p>
-
-            </div>
-        </div>
-
         <div class="reference">
+        <h2>〇 Reference</h2>
+            <ul>
+                <li>
+                    (1) Christine D. Keating, Rohit V. Pappu(2021). "Liquid–Liquid Phase Separation: A Widespread and Versatile Way to Organize Aqueous Solutions." J. Phys. Chem. B 2021, 125, 45, 12399–12400
+                    <a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.1c08831?ref=vi_llps">https://pubs.acs.org/doi/10.1021/acs.jpcb.1c08831?ref=vi_llps</a>
+                </li>
+                <li>
+                    (2) Yusuke Sato, Tetsuro Sakamoto, and Masahiro Takinoue(2020)."Sequence-based engineering of dynamic functions of micrometer-sized DNA droplets." SCIENCE ADVANCES, VOL. 6, NO. 23
+                    <a href="https://www.science.org/doi/10.1126/sciadv.aba3471">https://www.science.org/doi/10.1126/sciadv.aba3471</a>
+                </li>
+                <li>
+                    (3) Jing Gong, Nozomi Tsumura, Yusuke Sato, Masahiro Takinoue(2022)."Computational DNA Droplets Recognizing miRNA Sequence Inputs Based on Liquid–Liquid Phase Separation." Advanced Functional Materials, Volume 32, Issue 37
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202202322">https://onlinelibrary.wiley.com/doi/10.1002/adfm.202202322</a>
+                </li>
+                <li>
+                    (4) 分子ロボティクス研究会 編(2016),"DNA 分子デザインのすべて BIOMOD 虎の巻." eBook Series No.2 情報計算化学生物学会(CBI学会)出版
+                    <a href="https://cbi-society.org/home/documents/eBook/Biomod2016.pdf">https://cbi-society.org/home/documents/eBook/Biomod2016.pdf</a>
+                </li>
+                <li>
+                    (5) Chi Yao, Han Tang, Weijian Wu, Jianpu Tang, Weiwei Guo, Dan Luo, and Dayong Yang(2020)."Double Rolling Circle Amplification Generates Physically Cross-Linked DNA Network for Stem Cell Fishing." J. Am. Chem. Soc. 2020, 142, 7, 3422–3429
+                    <a href="https://pubs.acs.org/doi/10.1021/jacs.9b11001">https://pubs.acs.org/doi/10.1021/jacs.9b11001</a>
+                </li>
+                <li>
+                    (6) Yinzhou Ma, Hongning Zheng, Cuie Wang, Qin Yan, Jie Chao, Chunhai Fan, and Shou-Jun Xiao(2013)." RCA Strands as Scaffolds To Create Nanoscale Shapes by a Few Staple Strands."J. Am. Chem. Soc. 2013, 135, 8, 2959–2962
+                    <a href="https://pubs.acs.org/doi/10.1021/ja400102s">https://pubs.acs.org/doi/10.1021/ja400102s</a>
+                </li>
+            </ul>
             
         </div>
-
-
-
-
 
         <! フッター>
         <div class="footer">
             <p>© 2023 BIOMOD Japan</p>
-            <a href="#">ページの一番上に戻る</a>
+            <a href="#">top of the page</a>
         </div>
     </div>
 </body>

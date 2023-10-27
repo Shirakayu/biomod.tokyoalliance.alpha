@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+.interesting{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+
 .background{
     margin-left: auto;
     margin-right: auto;
@@ -9,7 +18,16 @@
     max-width: 1000px;
 }
 
-.object{
+.problem{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+
+.solution{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -19,6 +37,7 @@
 }
 
 .plan{
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -27,34 +46,25 @@
     max-width: 1000px;
 }
 
-.list{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 1000px; 
-}
-
 .flowchart{
     max-width: 100%;
 }
 
 .plan li{
     margin-bottom:30px ;
-    font-size: 20px;
+    font-size: 23px;
 }
 
-.list_component{
-    margin-left: 60px;
+.reference{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
 }
-.list_component h3{
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 0;
-    color: gray;
-}
-.list_component p{
-    margin-top: 0;
-    margin-bottom: 0;
+.reference li{
+    margin-bottom:30px ;
+    font-size: 23px;
 }
