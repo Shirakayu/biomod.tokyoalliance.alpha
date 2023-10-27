@@ -114,3 +114,16 @@ body{
 .footer a:hover{
     color: white;
 }
+.reference{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+.reference li{
+    margin-bottom:30px ;
+    font-size: 23px;
+}
