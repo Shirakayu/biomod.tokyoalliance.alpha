@@ -6,6 +6,11 @@ p{
     font-size: 23px;
     word-wrap: break-word;
 }
+.figure{
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 30px;
+}
 
 /*全体*/
 body{
