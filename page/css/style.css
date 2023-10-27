@@ -11,6 +11,9 @@ p{
     padding-top: 0%;
     margin-bottom: 30px;
 }
+.reference{
+    word-break: break-all;
+}
 
 /*全体*/
 body{

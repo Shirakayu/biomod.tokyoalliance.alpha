@@ -20,3 +20,17 @@ h2{
     text-align: center;
     width:100%;
 }
+
+.simulation{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+    max-width: 1000px;
+}
+
+.simulation img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
