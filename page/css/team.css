@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.intro{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+.student{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+.student h3{
+    margin-left: 60px;
+    font-size: 27px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.student p{
+    margin-left: 80px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.mentor{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1000px;
+}
+.mentor h3{
+    margin-left: 60px;
+    font-size: 27px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.mentor p{
+    margin-left: 80px;
+    padding-top: 0;
+    margin-top: 0;
+}
